@@ -1,0 +1,27 @@
+@mixin lato-regular {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin roboto-bold {
+  font-family: "RobotoBold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin lato-bold {
+  font-family: "LatoBold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin roboto-h2 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}

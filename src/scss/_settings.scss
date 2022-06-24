@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  margin: 0;
+  height: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+  background-color: var(--light-grey);
+}
+
+:root {
+  --font-family: "Roboto", "Arial", sans-serif;
+  --white: #ffffff;
+  --light-grey: #fafafa;
+  --mid-grey: #bbbbbb;
+  --blue: #8fc5dd;
+  --mid-blue: #499fc4;
+  --dark-blue: #4285f4;
+  --grey: #9497a1;
+  --black: #000000;
+  --content-blue: #7EA4ED;
+}
+
+#root {
+  height: 100%;
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url(../../public/fonts/LatoBold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../../public/fonts/Lato.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../public/fonts/Roboto.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../public/fonts/RobotoBold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.page--login .site-container {
+  flex-direction: column;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+}
+

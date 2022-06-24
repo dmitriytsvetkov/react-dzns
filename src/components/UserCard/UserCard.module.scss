@@ -1,0 +1,86 @@
+@import "../../scss/mixins";
+
+.wrapper {
+  @include roboto-bold;
+
+  color: var(--grey);
+  background-color: var(--white);
+}
+
+.container {
+  display: flex;
+  padding: 17px 28px;
+  justify-content: space-between;
+}
+
+.title {
+  @include roboto-h2;
+
+  color: var(--dark-blue);
+  padding: 0;
+  margin: 0;
+}
+
+.tagsContainer {
+  display: flex;
+  gap: 5px;
+
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #F7BBBB;
+  background-color: var(--light-grey);
+  color: var(--black);
+}
+
+.addTag {
+  color: var(--content-blue);
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.footer {
+  border: 1px solid #E3E0E0;
+}
+
+.contactBlock {
+  font-size: 0;
+}
+
+.buttons {
+  font-size: 0;
+}
+
+.button {
+  font-size: inherit;
+}
+
+.contactBlock {
+  font-size: inherit;
+}
+
+.socialBlock {
+  display: flex;
+  font-size: 0;
+  gap: 15px;
+}
+
+.socialBlockButton {
+  width: 25px;
+  height: 25px;
+  font-size: inherit;
+  display: block;
+  background-color: var(--blue);
+}
+
+.addToFolder {
+  background-color: var(--content-blue);
+}
